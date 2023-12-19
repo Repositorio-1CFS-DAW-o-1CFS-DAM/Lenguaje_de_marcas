@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Població Animals</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #9b9595; /* Gris clarito para el fondo de la página */
+        }
+
+        h1 {
+            color: #00ff00; /* Color verde para el título */
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%; /* Ajusta el ancho de la tabla según sea necesario */
+            margin-top: 20px; /* Espaciado superior para separar del título */
+            margin-left: 210px; /* Alinear titulo a la izquierda */
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #ccffcc; /* Verde más claro para el fondo del encabezado */
+        }
+
+        tfoot td {
+            background-color: #aaccff; /* Azul claro para el pie de página */
+        }
+    </style>
+</head>
+<body>
+<h1>Població Animals</h1>
+<table border="1">
+    <thead>
+    <tr>
+        <th colspan="2">Animal i quantitat</th>
+        <th>Tipus</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <td colspan="3">Quantitat d'animalets</td>
+    </tr>
+    </tfoot>
+    <tbody bgcolor="#ffcccc">
+    <tr>
+        <td>Aguila</td> <td>12</td>
+        <td rowspan="2">Aus</td>
+    </tr>
+    <tr>
+        <td>Voltor</td> <td>15</td>
+    </tr>
+    <tr>
+        <td>Rabosa</td> <td>12</td>
+        <td>Mamifers</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

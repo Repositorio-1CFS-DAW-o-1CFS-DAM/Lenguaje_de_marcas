@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari basic de registre</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #9b9595; /* Gris clarito para el fondo de la página */
+            color: #3f533f; /* Color verde para el texto */
+
+        }
+
+        h1 {
+            color: #3f533f; /* Color verde para el título */
+        }
+
+        form {
+            width: 50%; /* Ajusta el ancho del formulario según sea necesario */
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px; /* Espaciado entre el checkbox y el texto */
+        }
+
+        input[type="submit"] {
+            background-color: #3f533f; /* Botón de color verde */
+            color: #fff; /* Texto blanco en el botón */
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Formulari basic de registre</h1>
+<form action="Dades.txt" method="post">
+    Nom:
+    <input type="text" name="nom" placeholder="Posa el teu nom"/>
+    <br> <!-- Salto de línea -->
+    Cognom:
+    <input type="text" name="cognom" placeholder="Posa el teu cognom"/>
+    <br> <!-- Salto de línea -->
+    Contrasenya:
+    <input type="password" name="contrasenya" placeholder="Intrudueix la contrasenya"/>
+    <br> <!-- Salto de línea -->
+    Població:
+    <select name="poblacio">
+        <option value="barcelona">Barcelona</option>
+        <option value="madrid">Madrid</option>
+        <option value="valencia">Valencia</option>
+        <option value="sevilla">Sevilla</option>
+        <!-- Agrega más opciones según sea necesario -->
+    </select>
+    <br> <!-- Salto de línea -->
+    Descripció:
+    <textarea name="descripcio" rows="8" cols="20" placeholder="Descripció"></textarea>
+    <!-- rows y cols determinan el número de filas y columnas del textarea -->
+    <br> <!-- Salto de línea -->
+    Sexe:
+    <label><input type="radio" name="sexe" value="home"> Home</label>
+    <label><input type="radio" name="sexe" value="dona"> Dona</label>
+    <br> <!-- Salto de línea -->
+    Adreça electrònica:
+    <input type="email" name="email" placeholder="Adreça electrònica"/>
+    <br> <!-- Salto de línea -->
+    <input type="checkbox" name="rebre_informacio" value="si"> Vull rebre informació sobre novetats i ofertes
+    <br> <!-- Salto de línea -->
+    <input type="checkbox" name="acceptar_condicions" value="si"> Declaro haver llegit i acceptat les condicions generals del programa
+    <br> <!-- Salto de línea -->
+    <input type="submit" value="Enviar"/>
+</form>
+</body>
+</html>

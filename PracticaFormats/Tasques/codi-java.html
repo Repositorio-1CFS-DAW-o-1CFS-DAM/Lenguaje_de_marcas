@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabla HTML</title>
+    <style>
+        /* Estil per a centrar la tabla */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 600px;
+            margin:50px;
+            background-color: #9b9595; /* Gris clarito para el fondo de la página */
+        }
+
+        /* Estilo para alargar las filas y fusionar bordes */
+        table {
+            border-collapse: collapse; /* Fusionar bordes de la tabla */
+            width: 100%; /* Ocupar el 100% del ancho disponible */
+        }
+
+        td {
+            padding: 20px;
+            border: 1px solid black; /* Borde de celda */
+        }
+
+        /* Estilo para texto con fondo fluorescente como lista de descripción */
+        .fluorescente {
+            background-color: yellow;
+            display: inline-block;
+            padding: 5px; /* Espaciado interno */
+            margin: 0; /* Elimina el margen predeterminado */
+        }
+
+        /* Alinea los h4 a la izquierda y restaura los puntos de la lista desordenada */
+        h4 {
+            text-align: left;
+            margin: 0; /* Elimina el margen predeterminado */
+            padding-left: 20px; /* Añade un espacio antes del texto para los puntos de la lista */
+            position: relative;
+        }
+
+        h4:before {
+            content: "•"; /* Agrega el punto de la lista como contenido antes del h4 */
+            position: absolute;
+            left: 0;
+        }
+
+        /* Estilo para el código de Java */
+        code {
+            background-color: #add8e6; /* Fondo azul claro */
+            display: block;
+            padding: 10px; /* Espaciado interno */
+            margin: 0; /* Elimina el margen predeterminado */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Creación de la tabla con bordes -->
+<table>
+    <!-- Primera fila con una celda -->
+    <tr>
+        <!-- Celda con tres párrafos -->
+        <td>
+            <p>En este exemple sobre.</p>
+            <!-- Segundo párrafo con lista de descripción, negrita y marcado fluorescente -->
+            <dl>
+                <dt class="fluorescente">Formules i codi</dt>
+                <dd>usem tambe text preformat</dd>
+            </dl>
+        </td>
+    </tr>
+
+    <!-- Segunda fila con una celda -->
+    <tr>
+        <!-- Celda con un párrafo -->
+        <td>
+            <p>Equacio de segon grau.<b>a</b>x<sup>2</sup>+<b>b</b>x+<b>c</b>=0</p>
+        </td>
+    </tr>
+
+    <!-- Tercera fila con una celda -->
+    <tr>
+        <!-- Celda con código de Java de 5 líneas -->
+        <td>
+            <code>
+                public class HolaMon {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Bon dia, Benigaslo!");<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                }
+            </code>
+        </td>
+    </tr>
+
+    <!-- Cuarta fila con una celda -->
+    <tr>
+        <!-- Celda con dos párrafos y lista desordenada -->
+        <td>
+            <h4>HTML (<em>Hyper text Markup Language</em>)</h4>
+            <h4>W3C (<em>World Wide Web Consortium</em>)</h4>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
