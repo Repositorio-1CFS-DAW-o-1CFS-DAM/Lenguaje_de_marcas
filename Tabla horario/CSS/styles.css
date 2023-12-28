@@ -1,0 +1,54 @@
+table th {
+    width: 10em;
+    padding: 1em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-of-type(2) > th,
+tr:nth-of-type(3) > th,
+tr:nth-of-type(4) > th,
+tr:nth-of-type(5) > th,
+tr:nth-of-type(6) > th,
+tr:nth-of-type(7) > th,
+tr:nth-of-type(8) > th  {
+    background-color: #dad9d9;
+}
+
+.pati {
+    background-color: #dad9d9;
+    text-align: center;
+}
+
+.coord {
+    background-color: #0a7272;
+    text-align: center;
+}
+.m8 {
+    background-color: #aa5959;
+    text-align: center;
+}
+.m04 {
+    background-color: #89e1e1;
+    text-align: center;
+}
+.guardia {
+    background-color: #cdcd46;
+    text-align: center;
+}
+.m07 {
+    background-color: #e8cca4;
+    text-align: center;
+}
+.m0 {
+    background-color: #5ba1a1;
+    text-align: center;
+}
+.m13 {
+    background-color: black;
+    text-align: center;
+    color: white;
+
+}
